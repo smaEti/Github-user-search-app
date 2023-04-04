@@ -4,8 +4,27 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      borderRadius:{
+        'full' : '50%',
+      },
+      fontFamily:{
+        'kanit' : ['kanit',],
+        'kanit-regular' : ['kanit-regular'],
+        'kanit-medium' : ['kanit-medium'],
+        'RussoOne-Regular' : ['RussoOne-Regular'],
+        'BreeSerif-regular' : ['BreeSerif-regular'],
+      },
+      backgroundColor:{
+        'darkBackground2':'#1f2a48',
+        'lightBackground2': '#f5f8ff',
+        'lightBackground': '#fefefe',
+        
+        'darkBackground': '#141c30',
+      },
+    },
   },
   plugins: [],
 }

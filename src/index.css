@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('./assets/Kanit/Kanit-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+ }
+ @font-face {
+    font-family: 'Kanit-regular';
+    src: url('./assets/Kanit/Kanit-Regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+ }
+ @font-face {
+    font-family: 'RussoOne-Regular';
+    src: url('./assets/RussoOne-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+ }
+ @font-face {
+    font-family: 'BreeSerif-regular';
+    src: url('./assets/BreeSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+ }
