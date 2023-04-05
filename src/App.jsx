@@ -5,9 +5,12 @@ import Profile from './components/Profile';
 import './App.css';
 
 function App() {
+  //keeps the things that user is typing in search bar
   let [searchData, setSearchData] = useState('');
   const [profileData, setProfileData] = useState(null);
+  // loading state for async function
   const [loading, setLoading] = useState(false);
+  //gets the data from the api that is created in server (server/index.js)
   async function devFinder(searchData){
     setLoading(true);
     const response = await fetch(`http://localhost:3000/?q=${searchData}`);
@@ -15,9 +18,12 @@ function App() {
     setProfileData(data);
     setLoading(false);
   };
+  //state for dark mode 
   let [darkToggle, setDarkToggle] = useState(true);
+  //refrence to a wrapper div that will hold the whole app
   let screenRef = useRef(null);
   useEffect(() => {
+    //changing the theme when dark toggle state changes
     darkToggle
       ? screenRef?.current?.classList.add('dark')
       : screenRef?.current?.classList.remove('dark');

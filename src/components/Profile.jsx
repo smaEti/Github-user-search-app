@@ -2,6 +2,7 @@ import { IoLocationSharp } from 'react-icons/io5';
 import { HiLink } from 'react-icons/hi';
 import { BsTwitter, BsFillBuildingFill, BsLink45Deg } from 'react-icons/bs';
 const Profile = (props) => {
+  //if user exists on github 
   if (props.data.message == undefined) {
     return (
       <div className="w-full  dark:bg-darkBackground2 bg-lightBackground dark:shadow-none shadow-md shadow-gray-400 rounded-xl flex justify-between items-center md:gap-8 md:px-5">
@@ -87,6 +88,7 @@ const Profile = (props) => {
     );
   } else {
     return (
+      //shows erorr for when user doesn't exist on github
       <div className="flex justify-center items-center dark:text-white font-BreeSerif-regular font-semibold text-3xl">
         {props.data.message == 'Request failed with status code 404'
           ? 'Not Found - 404'
