@@ -10,6 +10,12 @@ export default {
       borderRadius:{
         'full' : '50%',
       },
+      width:{
+        "NotFull": '90%',
+      },
+      height :{
+        '18' : '4.5rem',
+      },
       fontFamily:{
         'kanit' : ['kanit',],
         'kanit-regular' : ['kanit-regular'],

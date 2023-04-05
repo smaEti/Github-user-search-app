@@ -5,19 +5,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 import fs from 'fs';
-
+var API_KEY;
+fs.readFile('./test.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  API_KEY = data;
+})
 app.get(`/`, async (req, res) => {
       async function getUser(name) {
           try {
             const response = await axios.get(`https://api.github.com/users/${name}`,{
                 headers: {
-                  Authorization: fs.readFile('./test.txt', 'utf8', (err, data) => {
-                    if (err) {
-                      console.error(err);
-                      return;
-                    }
-                    console.log(data);
-                  })
+                  Authorization: API_KEY,
                 }
             });
             res.send(response.data);

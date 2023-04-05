@@ -23,9 +23,9 @@ function App() {
       : screenRef?.current?.classList.remove('dark');
   }, [darkToggle]);
   return (
-    <div ref={screenRef}>
-      <div className="h-screen w-full bg-lightBackground2 dark:bg-darkBackground ">
-        <div className="md:w-6/12 mx-auto container md:pt-32 flex flex-col md:gap-8 ">
+    <div ref={screenRef} className='min-h-full'>
+      <div className="min-h-screen w-full bg-lightBackground2 dark:bg-darkBackground ">
+        <div className="md:w-6/12 w-11/12 mx-auto container md:pt-32 flex flex-col gap-4 md:gap-8 ">
           <Head
             darkToggle={darkToggle}
             onClick={() => setDarkToggle(!darkToggle)}
