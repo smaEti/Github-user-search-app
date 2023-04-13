@@ -1,5 +1,5 @@
 # GitHub user search app
-*Dark Mode
+* Dark Mode
 ![Algorithm schema](./public/github-user-search-dark.jpg)
-*Light Mode
+* Light Mode
 ![Algorithm schema](./public/github-user-search-light.jpg)
