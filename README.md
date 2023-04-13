@@ -38,5 +38,6 @@
     
     $ cd .../Github-user-search-app/server/
     $ node index.js
-   
-    
+    ```
+  * for API-KEY 
+    * you should make a text file next to your project that contains the API_KEY that you got from Github.
